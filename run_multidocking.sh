@@ -1,17 +1,17 @@
 #!/bin/bash
 
 ## Defining the piper PATH and PATH for parameters
-PIPER_HOME=/home/martis-e/work/local_progs/piper_package
+PIPER_HOME=<PATH_TO_PIPER_PACKAAGE>
 ATOMS=$PIPER_HOME/prms/atoms.prm
 COEFFS=$PIPER_HOME/prms/coeffs.prm
 ROTS=$PIPER_HOME/prms/rots.prm
 
 # Define RECEPTOR for DOCKING
-REC="/home/martis-e/work/ICEBERG/DOCKING/BMP2/REC_pnon.pdb"
+REC="<PATH_TO_RECEPTOR>/XYZ_pnon.pdb"
 
 
 ## Defining PATH for unprepared Ligand proteins
-LIGPATH="/home/martis-e/work/ICEBERG/DOCKING/PEPS"
+LIGPATH="<PATH_TO_PEPTIDES>"
 
 
 # Initiating Loop for docking multiple ligand peptides
