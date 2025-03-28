@@ -27,3 +27,8 @@ To perform **protein-protein** or **protein-peptide** docking with PIPER and ext
 sh run_multidocking.sh
 ```
 
+### To prepare the receptor protein run the following command before running "run_multidocking.sh". This needs to be done once for each Receptor structure. The outwill be "XYZ_pnon.pdb". Place a this file in the a directory, the PATH to this directory needs to be added in the main BASH script. 
+
+ ```
+ $PIPER_HOME/protein_prep/prepare.py XYZ.pdb
+```

@@ -6,9 +6,11 @@ ATOMS=$PIPER_HOME/prms/atoms.prm
 COEFFS=$PIPER_HOME/prms/coeffs.prm
 ROTS=$PIPER_HOME/prms/rots.prm
 
+
 # Define RECEPTOR for DOCKING
 REC="<PATH_TO_RECEPTOR>/XYZ_pnon.pdb"
-
+# To prepare the receptor protein run the following command before running this Script
+# $PIPER_HOME/protein_prep/prepare.py XYZ.pdb
 
 ## Defining PATH for unprepared Ligand proteins
 LIGPATH="<PATH_TO_PEPTIDES>"
