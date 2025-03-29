@@ -1,4 +1,4 @@
-# PepViS
+# PepViScreen
  ![image](image.svg)
 
 PEPtide VIrtual Screening using PIPER and sblu. You can now run Cluspro Workflow locally. 
@@ -7,7 +7,7 @@ PEPtide VIrtual Screening using PIPER and sblu. You can now run Cluspro Workflow
 
 ## To clone this repository:
 ```
-git clone https://github.com/elvismartis/PepViS.git
+git clone https://github.com/elvismartis/PepViScreen.git
 ```
 
 ## Requirements:
