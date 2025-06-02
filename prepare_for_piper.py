@@ -149,12 +149,7 @@ def pdb_norm(in_pdb, out_pdb):
 
 
 def pdbpqr(base_dir, pdb, chains):
-    """
-    Runs pdb2pqr.
-    incase titrable residue, define appropriate pH.
-    Use pbd2pqr flag "--titrate_only A:10,A:11 
-    --titration-state-method propka --with-pH pH"
-    """
+    """Runs pdb2pqr"""
     pdb_prefix = pdb[:-4]
 
     genout       = pdb_prefix+"_pgen.pdb";
