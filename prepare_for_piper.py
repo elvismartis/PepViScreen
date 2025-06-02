@@ -6,10 +6,7 @@ import sys
 import os
 
 def add_chain(file, out_file):
-    """
-    If chain identifier is absent in a given PDB
-    add_chain with add chain ID as "A"
-    """
+    """If chain identifier is absent, it assigns A"""
     with open(out_file, 'w') as out_f, open(file) as f:
         for line in f:
             if line.startswith('ATOM  ') or line.startswith('HETATM'):
@@ -18,11 +15,7 @@ def add_chain(file, out_file):
                 out_f.write(line)
 
 def extract_chains(file, chains, out_file):
-    """
-    If chain identifiers are present in the given PDB
-    extract_chain will extract and save in "chains" variable
-    to use later.
-    """
+    """If chain identifiers are present it is extracted"""
     with open(out_file, 'w') as out_f, open(file) as f:
         for line in f:
             if line.startswith('ATOM  ') or line.startswith('HETATM'):
@@ -30,11 +23,7 @@ def extract_chains(file, chains, out_file):
                     out_f.write(line)
 
 def filter_missing_backbone(pdb_in, pdb_out):
-    """
-    When there are gaps in the tertiary,
-    filter_missing_backbone will extract all good atoms 
-    from continous chain
-    """
+    """ filters missing backbone atoms"""
     f = open(pdb_in, 'r')
     lines = f.readlines()
     f.close()
@@ -87,11 +76,7 @@ def filter_missing_backbone(pdb_in, pdb_out):
 
 
 def pdb_norm(in_pdb, out_pdb):
-    """
-    Atoms from each amino acid to retain in the output *_pnon.pdb
-    Add modified amino acids here to retain them.
-    Residues not in this list will be stripped.
-    """
+    """dictionary for legal PDB residue name and their atoms"""
     resis = dict(ALA=['N', 'H', 'CA', 'CB', 'C', 'O'],
                  ARG=['N', 'H', 'CA', 'CB', 'CG', 'CD', 'NE', 'HE', 'CZ', 'NH1', 'HH11', 'HH12', 'NH2', 'HH21', 'HH22', 'C', 'O'],
                  ARN=['N', 'H', 'CA', 'CB', 'CG', 'CD', 'NE', 'HE', 'CZ', 'NH1', 'HH11', 'HH12', 'NH2', 'HH21', 'C', 'O'],
