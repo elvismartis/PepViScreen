@@ -1,4 +1,4 @@
-:# PepViScreen
+# PepViScreen
  ![image](image.svg)
 
 PEPtide VIrtual Screening using PIPER and sblu. You can now run Cluspro Workflow locally. 
@@ -11,7 +11,7 @@ git clone https://github.com/elvismartis/PepViScreen.git
 ```
 ## Steps for installation and setup
 ```
-python3 -m  -m venv </path>/piper
+python3 -m  venv </path>/piper
 source </path>/piper/bin/activate
 python3 -m pip install -r requirements.txt 
 ```
