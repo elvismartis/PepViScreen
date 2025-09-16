@@ -28,7 +28,7 @@ python3 -m pip install -r requirements.txt
  2. **Piper**: FFT-based docking software used in ClusPro. It is available as a 64-bit executable for use on Linux systems. Obtain PIPER from the web server [Cluspro](https://cluspro.bu.edu/downloads.php). You need to register and download the Piper binary.
 **PIPER is open-source for academic users ONLY**
 
-3. **prepare_for_piper.py**: This Python script prepares the PDB file compatible with PIPER. This script is a modification of the prepare.py script bundled with the piper_package—the original bundled Python script and its dependencies on pdb2pqr-1.9.0 work only with Python 2.7. prepare_for_piper.py is a workaround for using the latest pdb2pqr and Python 3. 
+3. **prepare_for_piper.py**: This Python script prepares the PDB file compatible with PIPER. This script is a modification of the prepare.py script bundled with the piper_package—the original bundled Python script and its dependencies on pdb2pqr-1.9.0 work only with Python 2.7. prepare_for_piper.py is a workaround for using the latest pdb2pqr and Python3. (**Report any bugs by opening an issue**)
 
 ## Usage
 To perform **protein-protein** or **protein-peptide** docking with PIPER and extract docked conformation as a PDB file. 
